@@ -1,0 +1,53 @@
+﻿<Window x:Class="FFU.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FFU"
+        mc:Ignorable="d"
+        Title="FFU Speed Control"
+        Height="600"
+        Width="800"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None">
+    <Border CornerRadius="0 0 10 10"
+            Background="#121212">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0"
+                  Background="#000000">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="10" />
+                </Grid.ColumnDefinitions>
+                
+                
+            </Grid>
+            <Grid Grid.Row="1"
+                  Background="#1F1F1F">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1"
+                           Text="FFU CONTROL"
+                           Foreground="#FFFFFF"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="30"
+                           FontWeight="Bold"
+                           FontFamily="Cambria"/>
+            </Grid>
+        </Grid>
+
+    </Border>
+</Window>
